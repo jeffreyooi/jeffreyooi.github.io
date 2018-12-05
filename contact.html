@@ -15,27 +15,8 @@
     </head>
     <body>
         <!-- Navigation bar -->
-        <div class="container">
-            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-                <a class="navbar-brand" href="index.html">Jeffrey Ooi</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContents" aria-controls="navbarContents" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarContents">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Downloads</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <div id="navBar"></div>
+
         <div class="jumbotron">
             <div class="container">
                 <div class="row align-items-center">
@@ -75,6 +56,11 @@
 
         <!-- Bootstrap core JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $("#navBar").load("html/component/nav_bar.html");
+            });
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     </body>

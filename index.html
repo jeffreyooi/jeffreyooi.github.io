@@ -12,30 +12,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <!-- SEO -->
+        <!-- jQuery -->
     </head>
     <body>
         <!-- Navigation bar -->
-        <div class="container">
-            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-                <a class="navbar-brand" href="#">Jeffrey Ooi</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContents" aria-controls="navbarContents" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarContents">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Downloads</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <div id="navBar"></div>
         
         <!-- Info box -->
         <main>
@@ -65,174 +46,39 @@
         </main>
 
         <div class="container">
-            <div>
-                <h3 class="h3">About me</h3>
-                <p class="lead text-muted">
-                    A Year 2 Computer Science Undergraduate from National University of Singapore.
-                    <br>
-                    Currently open for part time Software Engineering / Software Development / Game Programming opportunity.
-                </p>
-            </div>
+            <!-- About -->
+            <div id="aboutContent"></div>
             <br>
-            <div>
-                <h3 class="h3">Experiences</h3>
-                <p>
-                    <h5 class="h5 text-muted">TinyMOS Pte Ltd, Part-time programmer</h5>
-                    <h6 class="h6 text-muted"><em>May 2018 - Present, Singapore</em></h6>
-                    <ul class="lead text-muted">
-                        <li>Implemented a source control system using consumer hardware and off-the-shelf software</li>
-                        <li>Worked on the camera's companion app and camera software</li>
-                        <li>Implemented new renderer for camera software to support shaders and improved rendering performance</li>
-                    </ul>
-                </p>
-                <p>
-                    <h5 class="h5 text-muted">Springloaded Pte Ltd, Part-time programmer</h5>
-                    <h6 class="h6 text-muted"><em>Aug 2016 - May 2018, Singapore</em></h6>
-                    <ul class="lead text-muted">
-                        <li>Wrote game server with C# and deploy to Amazon Web Services</li>
-                        <li>Updated in-house game engine with the ability to render fonts of different languages</li>
-                        <li>Implemented AdMob into games by writing wrapper library with Java for Android and Objective-C for iOS</li>
-                        <li>Implemented platform specific features for games with Xamarin.Android and Xamarin.iOS</li>
-                        <li>Implemented Microsoft App Center and Hockey App for analytics and crash report across all games</li>
-                        <li>Implemented in-app purchase systems on Android and iOS</li>
-                        <li>Implemented server-side features such as cloud save, friends system and clan system with DynamoDB, MySQL and EC2</li>
-                        <li>Developed a GUI library that will be used across all games for game social, friends list etc with C# and Microsoft XNA</li>
-                        <li>Manage releases on Google Play, App Store and Steam</li>
-                        <li>Projects worked on: Desert Island Fishing, The Last Vikings, Campaign Clicker</li>
-                    </ul>
-                </p>
-                <p>
-                    <h5 class="h5 text-muted">Infinity SG, Programming intern</h5>
-                    <h6 class="h6 text-muted"><em>Nov 2015 - April 2016, Singapore</em></h6>
-                    <ul class="lead text-muted">
-                        <li>Worked on a game with C++ and in-house game engine</li>
-                        <li>Implemented graphic shaders for foliage movements with HLSL</li>
-                        <li>Researched on making games on iOS with C++ and Objective-C</li>
-                    </ul>
-                </p>
-                <p>
-                    <h5 class="h5 text-muted">Sony Mobile Singapore, Brand ambassador and ad-hoc product trainer</h5>
-                    <h6 class="h6 text-muted"><em>Oct 2013 - April 2016, Singapore</em></h6>
-                    <ul class="lead text-muted">
-                        <li>Top 20 sales among other brand ambassadors</li>
-                        <li>Adjunct product trainer to train other brand ambassadors on new product knowledges</li>
-                    </ul>
-                </p>
-            </div>
-            <div>
-                <h3 class="h3">Skills</h3>
-                <p>
-                    <h5 class="h5 text-muted">Primary stack</h5>
-                    <ul class="lead text-muted">
-                        <li>Java</li>
-                        <li>C#</li>
-                        <li>Objective-C</li>
-                        <li>Xamarin</li>
-                        <li>Amazon Web Services</li>
-                    </ul>
-                </p>
-                <p>
-                    <h5 class="h5 text-muted">Secondary stack</h5>
-                    <ul class="lead text-muted">
-                        <li>C/C++</li>
-                        <li>HTML</li>
-                        <li>SQL</li>
-                        <li>NoSQL</li>
-                    </ul>
-                </p>
-                <p>
-                    <h5 class="h5 text-muted">Development software</h5>
-                    <ul class="lead text-muted">
-                        <li>Git</li>
-                        <li>SVN</li>
-                        <li>Visual Studio</li>
-                        <li>Unity3D</li>
-                        <li>Jetbrains IDE</li>
-                    </ul>
-                </p>
-                <p>
-                    <h5 class="h5 text-muted">Creative software</h5>
-                    <ul class="lead text-muted">
-                        <li>Adobe Photoshop</li>
-                        <li>Adobe Lightroom</li>
-                    </ul>
-                </p>
-            </div>
+            <!-- Skills -->
+            <div id="skillsContent"></div>
             <br>
-            <div>
-                <h3 class="h3">Education</h3>
-                <p>
-                    <h5 class="h5 text-muted">Bachelor of Science in Computer Science - National University of Singapore</h5>
-                    <h6 class="h6 text-muted"><em>August 2016 - August 2020</em></h6>
-                    <ul class="lead text-muted">
-                        <li>Focus area: Artificial Intelligence</li>
-                    </ul>
-                </p>
-                <p>
-                    <h5 class="h5 text-muted">Diploma in Games Development Technology - Nanyang Polytechnic, Singapore</h5>
-                    <h6 class="h6 text-muted"><em>April 2013 - May 2016</em></h6>
-                    <ul class="lead text-muted">
-                        <li>International Game Concept Challenge representative 2015</li>
-                        <li>Head of Creative Digital and Media, International Friendship Club 2015</li>
-                        <li>Student representative, One Heart 2014</li>
-                        <li>Organizing committee of events organized by International Friendship Club</li>
-                    </ul>
-                </p>
-            </div>
+            <!-- Experiences -->
+            <div id="experiencesContent"></div>
             <br>
-            <div>
-                <h3 class="h3">Awards</h3>
-                <p>
-                    <ul class="lead text-muted">
-                        <li>International Game Concept Challenge 2015 Gold Medal</li>
-                        <li>Digipen Institute of Technology Singapore Silver Medal Recipient 2016</li>
-                        <li>Director's List for 6 consecutive semesters for scoring in the top 10% in Diploma in Games Development Technology</li>
-                    </ul>
-                </p>
-            </div>
+            <!-- Education -->
+            <div id="educationContent"></div>
             <br>
-            <h3 class="h3">Projects</h3>
-            <div id="slideshow" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                    <li data-target="#slideshow" data-slide-to="0" class="active"></li>
-                    <li data-target="#slideshow" data-slide-to="1"></li>
-                </ul>
-                <!-- Slide show -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="carousel-image-gradient"></div>
-                        <a href="https://play.google.com/store/apps/details?id=com.springloaded.desertislandfishing" target="_blank" title="Desert Island Fishing"></a>
-                            <img class="d-block mx-auto" src="https://i.ytimg.com/vi/BGzslCoAJak/maxresdefault.jpg" alt="Desert Island Fishing" style="width:100%;height:100%">
-                        </a>
-                        <div class="carousel-caption">
-                            <h5 class="h5">Desert Island Fishing</h5>
-                            <p>A casual fishing mobile game on Google Play</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-image-gradient"></div>
-                        <a href="https://play.google.com/store/apps/details?id=com.springloaded.thelastvikings" target="_blank" title="The Last Vikings">
-                            <img class="d-block mx-auto" src="https://lh3.googleusercontent.com/CBiHR4EvpxmynYDXu-11_GT4mtks3b9MsLIu-ifYqm881Nj0uJ9Lxi5n62gpZs_hduU=h900-rw" alt="The Last Vikings" style="width:100%;height:100%">
-                        </a>
-                        <div class="carousel-caption">
-                            <h5 class="h5">The Last Vikings</h5>
-                            <p>A casual vikings raiding game on Google Play and App Store</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#slideshow" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>
+            <!-- Awards -->
+            <div id="awardsContent"></div>
+            <br>
+            <!-- Projects -->
+            <div id="projectShowcaseContent"></div>
             <br>
         </div>
         <!-- Bootstrap core JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $("#navBar").load("html/component/nav_bar.html");
+
+                $("#aboutContent").load("html/main/about.html");
+                $("#awardsContent").load("html/main/awards.html");
+                $("#educationContent").load("html/main/education.html");
+                $("#experiencesContent").load("html/main/experiences.html");
+                $("#projectShowcaseContent").load("html/main/projects_showcase.html");
+                $("#skillsContent").load("html/main/skills.html");
+            });
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
